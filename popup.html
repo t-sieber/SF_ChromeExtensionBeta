@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-    
+
     <link rel="stylesheet" href="popup.css">
     <title>Salesforce Administrator</title>
   </head>
@@ -17,16 +17,36 @@
                </a>
                <ul class="navigation-list float-right">
                   <li class="navigation-item"><a class="navigation-link" href="/popup_licenseInfo.html">Legal</a></li>
-                  
+              </ul>
+              <ul class="navigation-list float-right">
+                 <li class="navigation-button"><button type="button" name="button"> Fetch Information </button></li>
                </ul>
+
             </section>
          </nav>
     <h3>  </h3>
     <div class="cleararea">
-      <button type="button" name="button"> Show me my SessionId </button>
+      <div>
+          <hr />
+          <h5> Field Fetcher </h5>
+          <select id='sObjectTypes'>
+            <option value="America/Adak">Anguilla</option>
+          </select>
+          <select id='pageLayouts'>
+            <option value="America/Adak">Anguilla</option>
+          </select>
+      </div>
+      <div>
+          <hr />
+          <h5> Company Information </h5>
+          <span class="companyInfo_Name"></span><br />
+          <span class="companyInfo_Contact"></span><br />
+          <span class="companyInfo_Instance"></span><br />
+      </div>
       <script type="text/javascript" src="popup.js" ></script>
+      <!--<script type="text/javascript" src="fieldFetcherLogic.js" ></script>-->
     </div>
-    
+
 
   </body>
 </html>

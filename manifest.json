@@ -10,14 +10,16 @@
   ],
   "browser_action": {
       "default_popup": "popup.html",
-      "default_title": "Salesforce Administrator Toolkit" 
+      "default_title": "Salesforce Administrator Toolkit"
     },
   "permissions": [
     "cookies",
     "tabs",
     "notifications",
     "*://*.force.com/",
-    "*://*.documentforce.com/"
+    "*://*.documentforce.com/",
+    "*://*.lightning.force.com/",
+    "*://*.salesforce.com/"
   ]
-  
+
 }

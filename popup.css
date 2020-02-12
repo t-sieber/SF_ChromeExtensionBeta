@@ -12,6 +12,11 @@ body {
     position:relative;
     width:100%
 }
+
+.navigation-button {
+  padding-top: 0.5em;
+}
+
 .wrapper .container{
     /*max-width:80rem*/
 }
