@@ -2,6 +2,7 @@ var sessionId;
 
 var endpointURL;
 
+
 document.addEventListener('DOMContentLoaded', function () {
   retrieveSFSessionId();
 
@@ -57,6 +58,7 @@ function loadCompanyInformation() {
     let currentURL = tabs[0].url;
     readCookie(currentURL, 'sid', function(bearer_token) {
       var bearer = 'Bearer ' + bearer_token;
+      SESSION_ID = bearer;
       let path = '/services/data/v33.0/query/?q=SELECT%20Name%20,%20PrimaryContact%20,%20InstanceName%20FROM%20Organization';
       fetch(currentURL.substring(0, currentURL.indexOf('/lightning')) + path, {
         method: 'GET',
