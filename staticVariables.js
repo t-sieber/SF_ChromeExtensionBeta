@@ -1,1 +1,0 @@
-var SESSION_ID;

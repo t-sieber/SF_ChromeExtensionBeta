@@ -1,0 +1,3 @@
+var SESSION_ID;
+
+var ENDPOINT_URL;
