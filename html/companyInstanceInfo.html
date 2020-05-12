@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="width: 80em;">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+
+    <link rel="stylesheet" href="../popup.css">
+    <title>Salesforce Administrator</title>
+  </head>
+  <body>
+    <div class="customNavigationHeaderBar">
+      <div class="customNavigationItems" style="width: 65%;">
+        <div>General Information</div>
+        <div><a class="navigation-link" href="fieldFetcher.html">Field Fetcher</a></div>
+        <div><a class="navigation-link" href="../popup.html">Home</a></div>
+        <div><a class="navigation-link" href="limitInfo.html">Limit Info</a></div>
+        <div><a class="navigation-link" href="sObjectInfo.html">sObject Info</a></div>
+      </div>
+      <div class="customActionHeader">
+        <a class="navigation-link" href="../popup_licenseInfo.html">Legal</a>
+      </div>
+    </div>  
+    <h3>  </h3>
+    <div class="cleararea content">
+        <hr />
+        <h5> Company Information </h5>
+          <span class="companyInfo_Name"></span><br />
+          <span class="companyInfo_Contact"></span><br /><br />
+          <span class="companyInfo_Instance"></span><br />
+          <span class="companyInfo_ReleaseVersion"></span><br />
+          <span class="companyInfo_Status"></span><br />
+          
+          <br />
+          <span><b> Upcoming or Past Maintenances </b></span>
+          <table id="maintenanceTable" class="display" >
+            
+          </table>
+          
+          <span><b> Past or Ongoing Incidents </b></span>
+          <table id="incidentTable" class="display">
+            
+          </table>
+          
+          
+          <span class="companyInfo_Maintenances"></span><br />
+          <span class="companyInfo_Disruptions"></span><br />
+      </div>
+    
+    <script type="text/javascript" src="../js/basicFunctions.js" ></script>
+    <script type="text/javascript" src="../js/staticVariables.js" ></script>
+    <script type="text/javascript" src="../js/companyInstanceInfoLogic.js" ></script>
+  </body>
+</html>

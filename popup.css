@@ -6,6 +6,43 @@ body {
   padding: 1em 1em 1em 1em;
 }
 
+.customNavigationHeaderBar {
+  padding: 0.75em 1em;
+  color: #606c76;
+  background: #F4F4F6;
+  border-bottom: .1rem solid #d1d1d1;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+    top: 0;
+}
+
+.customNavigationItems div {
+  display: table-cell;
+   width: 5em;
+   padding: 0em 1em;
+}
+
+.customNavigationItems {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.customActionHeader {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer {
+  height: 50px;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
 .wrapper{
     display:block;
     overflow:hidden;

@@ -1,6 +1,25 @@
 
 var objectLayoutAssignment = [];
 
+document.addEventListener('DOMContentLoaded', function () {
+    waitForDefinement();
+    if (document.querySelector('button') != undefined) {
+      document.getElementById('fetchLayout').addEventListener('click', function() {
+        findFields();
+      }, false);
+    }
+}, true);
+
+
+function waitForDefinement(){
+    if(typeof SESSION_ID !== "undefined"){
+        loadPageLayouts();
+    }
+    else{
+        setTimeout(waitForDefinement, 250);
+    }
+}
+
 function loadPageLayouts() {
       let path = '/services/data/v33.0/tooling/query/?q=Select%20EntityDefinition.Label,%20Name%20,%20TableEnumOrId%20,EntityDefinition.QualifiedAPIName%20from%20Layout';
       fetch(ENDPOINT_URL + path, {

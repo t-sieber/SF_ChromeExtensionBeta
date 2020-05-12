@@ -6,18 +6,7 @@ var endpointURL;
 document.addEventListener('DOMContentLoaded', function () {
   retrieveSFSessionId();
 
-  if (document.querySelector('button') != undefined) {
-    document.getElementById('fetchInfo').addEventListener('click', function() {
-    
-      loadPageLayouts();
-    }, false);
-    document.getElementById('fetchLayout').addEventListener('click', function() {
-      findFields();
-    }, false);
-    document.getElementById('fetchLimitInfo').addEventListener('click', function() {
-      fetchLimitData();
-    }, false);
-  }
+  
 
 
 

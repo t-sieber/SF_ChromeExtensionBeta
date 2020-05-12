@@ -10,73 +10,34 @@
     <title>Salesforce Administrator</title>
   </head>
   <body>
-    <nav class="navigation">
-            <section class="container">
-               <a class="navigation-title" href="/">
-                  <h1 class="title">Salesforce Administrator Toolkit</h1>
-               </a>
-               <ul class="navigation-list float-right">
-                  <li class="navigation-item"><a class="navigation-link" href="/popup_licenseInfo.html">Legal</a></li>
-              </ul>
-              <ul class="navigation-list float-right">
-                 <li class="navigation-button"><button type="button" name="button" id="fetchInfo"> Fetch Information </button></li>
-               </ul>
-
-            </section>
-         </nav>
+    <div class="customNavigationHeaderBar">
+      <div class="customNavigationItems">
+        <div><a class="navigation-link" href="html/companyInstanceInfo.html">General Information</a></div>
+        <div><a class="navigation-link" href="html/fieldFetcher.html">Field Fetcher</a></div>
+        <div>Home</div>
+        <div><a class="navigation-link" href="html/limitInfo.html">Limit Info</a></div>
+        <div><a class="navigation-link" href="html/sObjectInfo.html">sObject Info</a></div>
+      </div>
+      <div class="customActionHeader">
+        <a class="navigation-link" href="/popup_licenseInfo.html">Legal</a>
+      </div>
+    </div>  
     <h3>  </h3>
-    <div class="cleararea">
-      <div>
-          <hr />
-          <h5> Limit Info </h5>
-          <span id="limitInfos">
-            
-          </span>
+    <div class="cleararea content">
+          
+          
           <button type="button" name="button" id="fetchLimitInfo"> Fetch Information about Limits</button>
-      </div>
-      <div>
           <hr />
-          <h5> Field Fetcher </h5>
-          <select id='sObjectTypes'>
-          </select>
-          <select id='pageLayouts'>
-          </select>
-          <button type="button" name="button" id="fetchLayout"> Download visible Fields as CSV</button>
-      </div>
-      <div>
           <hr />
-          <h5> Company Information </h5>
-          <span class="companyInfo_Name"></span><br />
-          <span class="companyInfo_Contact"></span><br /><br />
-          <span class="companyInfo_Instance"></span><br />
-          <span class="companyInfo_ReleaseVersion"></span><br />
-          <span class="companyInfo_Status"></span><br />
-          
-          <br />
-          <span><b> Upcoming or Past Maintenances </b></span>
-          <table id="maintenanceTable" class="display">
-            
-          </table>
-          
-          <span><b> Past or Ongoing Incidents </b></span>
-          <table id="incidentTable" class="display">
-            
-          </table>
-          
-          
-          <span class="companyInfo_Maintenances"></span><br />
-          <span class="companyInfo_Disruptions"></span><br />
       </div>
-      
-      
-      <script type="text/javascript" src="js/staticVariables.js" ></script>
-      
-      <script type="text/javascript" src="js/companyInstanceInfoLogic.js" ></script>
-      <script type="text/javascript" src="js/limitFetcherLogic.js" ></script>
-      <script type="text/javascript" src="js/fieldFetcherLogic.js" ></script>
-      <script type="text/javascript" src="js/popup.js" ></script>
     </div>
-
-
+    
+    
+    <script type="text/javascript" src="js/basicFunctions.js" ></script>
+    <script type="text/javascript" src="js/staticVariables.js" ></script>
+    <script type="text/javascript" src="js/companyInstanceInfoLogic.js" ></script>
+    <script type="text/javascript" src="js/limitFetcherLogic.js" ></script>
+    <script type="text/javascript" src="js/fieldFetcherLogic.js" ></script>
+    <script type="text/javascript" src="js/popup.js" ></script>
   </body>
 </html>

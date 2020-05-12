@@ -1,3 +1,21 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    waitForDefinement();
+}, true);
+
+
+function waitForDefinement(){
+    if(typeof SESSION_ID !== "undefined"){
+        loadCompanyInformation();
+    }
+    else{
+        setTimeout(waitForDefinement, 250);
+    }
+}
+
+
+
+
 function loadCompanyInformation() {
   
       let path = '/services/data/v33.0/query/?q=SELECT%20Name%20,%20PrimaryContact%20,%20InstanceName%20FROM%20Organization';
